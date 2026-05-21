@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# 📊 SegmentX – AI-Powered Customer Segmentation Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SegmentX is an intelligent customer analytics dashboard designed to perform customer segmentation using RFM (Recency, Frequency, Monetary) analysis. It helps businesses identify customer behavior patterns and classify customers into meaningful groups for better marketing and decision-making.
 
-Currently, two official plugins are available:
+The application generates interactive visualizations and analytics reports to help understand customer engagement, revenue contribution, and customer retention.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Customer segmentation using RFM analysis
+- Interactive dashboard with charts and analytics
+- Revenue and customer insights visualization
+- Customer behavior tracking
+- Real-time segment distribution analysis
+- Responsive and modern UI
+- Customer performance metrics
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```plaintext
+SegmentX/
+│
+├── src/
+│   ├── App.tsx
+│   ├── utils/
+│   │   └── rfm.ts
+│   ├── assets/
+│
+├── public/
+├── dist/
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Lavanya-code-byte/SegmentX.git
+cd SegmentX
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
+### 4. Open in Browser
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📊 Dashboard Insights
+
+- Total Customers
+- Total Revenue
+- Average Order Value
+- Customer Segment Distribution
+- Audience Breakdown Visualization
+- Recent Customer Activity
+
+---
+
+## 🎯 Use Cases
+
+- Customer behavior analysis
+- Marketing campaign targeting
+- Business intelligence dashboards
+- Revenue optimization
+- Customer retention analysis
